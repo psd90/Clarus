@@ -5,5 +5,21 @@
         <li class="breadcrumb-item"><LinkTo @route="index">Home</LinkTo></li>
         <li class="breadcrumb-item">Add Film</li>
     </ol>
+    <section class="w-50 ml-auto text-right mb-5">
+        <div class="row">
+            <span class="col">Movie Name</span>
+            <span class="col">{{this.name}}</span>
+        </div>
+        <div class="row">
+            <span class="col">Description</span>
+            <span class="col">{{this.desc}}</span>
+        </div>
+        <div class="row">
+            <span class="col">Review</span>
+            <span class="col">{{this.review}}</span>
+        </div>
+    </section>
+
+    <button class="btn btn-success float-right">Submit</button>
 </main>
 {{outlet}}
