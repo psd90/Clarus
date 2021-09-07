@@ -1,11 +1,23 @@
-{{page-title "Index"}}
+{{page-title "Movie Rating App"}}
 
 <LinkTo @route="addFilm" class="add-link">
 <i class="fa fa-plus"></i>
 </LinkTo>
 
-<main class="container mt-5">
-    <LinkTo @route="film" @model="1">Movie 1</LinkTo>
-    <LinkTo @route="film" @model="2">Movie 2</LinkTo>    
-</main>
+<div>
+<section>
+{{#each model as |film|}}
+<div>
+  <div>{{film.title}}</div>
+  <div>{{film.body}}</div>
+</div>
+{{/each}}
+</section>
+</div>
+
+
+<GeneralContainer>
+    <Film /> 
+    <Film /> 
+</GeneralContainer>
 {{outlet}}

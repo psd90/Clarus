@@ -11,4 +11,5 @@ Router.map(function () {
   this.route('film', { path: '/film/:film_id' });
   this.route('not-found', { path: '/*path' });
   this.route('addFilm');
+  this.route('addReview');
 });
