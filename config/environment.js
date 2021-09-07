@@ -4,6 +4,16 @@ module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'clarus',
     environment,
+    firebase: {
+      apiKey: 'AIzaSyCfIURukUI3lnk3UBXb4eUosOH4jcF9I4A',
+      authDomain: 'clarustechtest.firebaseapp.com',
+      databaseURL:
+        'https://clarustechtest-default-rtdb.europe-west1.firebasedatabase.app',
+      projectId: 'clarustechtest',
+      storageBucket: 'clarustechtest.appspot.com',
+      messagingSenderId: '1085515312703',
+      appId: '1:1085515312703:web:77af2978123a69b752528a',
+    },
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {

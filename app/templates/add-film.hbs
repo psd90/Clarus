@@ -1,25 +1,31 @@
-{{page-title "AddFilm"}}
+{{page-title "Add a film"}}
 <main class="container mt-5">
     <h1>Add A Movie</h1>
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><LinkTo @route="index">Home</LinkTo></li>
         <li class="breadcrumb-item">Add Film</li>
     </ol>
+   
+   
     <section class="w-50 ml-auto text-right mb-5">
         <div class="row">
             <span class="col">Movie Name</span>
-            <span class="col">{{this.name}}</span>
+            <span class="col">{{input value=name placeholder="Add Movie"}}</span>
         </div>
         <div class="row">
             <span class="col">Description</span>
-            <span class="col">{{this.desc}}</span>
+            <span class="col">{{input value=body placeholder="Add Description"}}</span>
         </div>
         <div class="row">
             <span class="col">Review</span>
-            <span class="col">{{this.review}}</span>
+            <span class="col">{{input value=review placeholder="Add Review"}}</span>
+        </div>
+        <div class="row">
+            <span class="col">Rating</span>
+            <span class="col">{{input value=rating placeholder="0->100"}}</span>
         </div>
     </section>
 
-    <button class="btn btn-success float-right">Submit</button>
+    <button class="btn btn-success float-right" {{action "createFilm"}}type="button">Submit</button>
 </main>
 {{outlet}}
